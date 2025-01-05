@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fullscreen container */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+    overflow: hidden;
+    background-color: black; /* Background saat loading */
+}
+
+/* YouTube iframe */
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+ /* Styling untuk icon dan kotak */
+ .item-boxes {
+        border: 2px solid red;
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+        height: 300px; /* Tentukan tinggi tetap untuk kotak */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        margin-bottom: 20px; /* Menambahkan spasi bawah antar item box */
+    }   
+
+    .item-boxes:hover {
+        transform: scale(1.05); /* Efek zoom saat di-hover */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan pada hover */
+    }
+
+    .icon {
+        font-size: 3rem; /* Ukuran ikon besar */
+        color: red;
+        margin-bottom: 20px;
+        transition: color 0.3s ease;
+    }
+
+    .icon:hover {
+        color: #ff4500; /* Mengubah warna ikon saat di-hover */
+        cursor: pointer; /* Menampilkan cursor pointer saat hover */
+    }
+
+    .item-line {
+        width: 50%;
+        height: 2px;
+        background-color: red;
+        margin-bottom: 10px;
+        transition: width 0.3s ease;
+    }
+
+    .item-boxes:hover .item-line {
+        width: 80%; /* Memperluas garis saat hover */
+    }

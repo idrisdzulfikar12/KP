@@ -1,0 +1,32 @@
+.footer-top {
+    background-color: #343a40;
+    color: #d1d1d1;
+}
+
+.footer-top h5 {
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.footer-top a {
+    color: #d1d1d1;
+    text-decoration: none;
+}
+
+.footer-top a:hover {
+    color: #ffdd57;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    background-color: #495057;
+}
+
+.social-network i {
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.social-network a:hover i {
+    color: #ffdd57;
+}
